@@ -24,6 +24,7 @@ class MySpider(scrapy.Spider):
 
         for row in rows:
             print(row.css("td::text").extract())
+            # print("---------------------")
             # print(row.xpath("td//text()").extract())
 
         # Write to CSV
